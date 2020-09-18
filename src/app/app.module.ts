@@ -13,6 +13,7 @@ import {Geolocation} from '@ionic-native/geolocation/ngx';
 import {NativeGeocoder} from '@ionic-native/native-geocoder/ngx';
 import {BarcodeScanner} from '@ionic-native/barcode-scanner/ngx';
 import {Ndef, NFC} from '@ionic-native/nfc/ngx';
+import {Deeplinks} from '@ionic-native/deeplinks/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +27,7 @@ import {Ndef, NFC} from '@ionic-native/nfc/ngx';
     BarcodeScanner,
     NFC,
     Ndef,
+    Deeplinks,
     {provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
   ],
   bootstrap: [AppComponent]
