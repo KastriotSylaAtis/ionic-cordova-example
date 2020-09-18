@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            NFC reader page
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="ion-padding">
+        <ion-button (click)="readNFC()">Read NFC</ion-button>
+
+        <ion-list>
+            <ion-list-header>
+                <ion-label>
+                    NFC Information
+                </ion-label>
+            </ion-list-header>
+
+            <ion-item>
+                <ion-label>NFC reader Text:</ion-label>
+                <ion-badge></ion-badge>
+            </ion-item>
+        </ion-list>
+
+        <ion-button routerLink="/home" style="margin-top: 40px">Back to home</ion-button>
+    </div>
+</ion-content>

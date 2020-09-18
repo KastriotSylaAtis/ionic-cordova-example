@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            QR code reader plugin
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="ion-padding">
+        <ion-button (click)="encode()">Encode example</ion-button>
+        <ion-button (click)="scan()">Scan code</ion-button>
+
+        <ion-list>
+            <ion-list-header>
+                <ion-label>Scanner information</ion-label>
+            </ion-list-header>
+
+            <ion-item>
+                <ion-label>Scanner Text:</ion-label>
+                <ion-badge>
+                    {{scannerData?.text}}
+                </ion-badge>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Scanner format:</ion-label>
+                <ion-badge>
+                    {{scannerData?.format}}
+                </ion-badge>
+            </ion-item>
+        </ion-list>
+
+        <ion-button routerLink="/home" style="margin-top: 40px">Back to home</ion-button>
+    </div>
+</ion-content>
